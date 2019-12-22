@@ -32,10 +32,10 @@ app.post("/", function (req, res) {
 
 
     var options = {
-        url: 'https://us4.api.mailchimp.com/3.0/lists/6b55e184f6',
+        url: 'https://us4.api.mailchimp.com/3.0/lists/{mailchimp list ID}',
         method: "POST",
         headers: {
-            "Authorization": "Rajiv b08bf603c4cdc07b2805277adc3c3bd5-us4"
+            "Authorization": "Rajiv {Mailchmp API key}"
         },
         body: jsonData
     }
@@ -62,6 +62,3 @@ app.listen(process.env.PORT || 3000, function (req, res) {
     console.log("server has started on port 3000");
 })
 
-// b08bf603c4cdc07b2805277adc3c3bd5-us4
-
-// List id 6b55e184f6
